@@ -1,0 +1,118 @@
+bhavesh.sharma@metacube.com
+akshat.vajpayee@metacube.com
+mayank.moolchandani@metacube.com
+
+
+
+
+
+GIT SETUP
+BASIC COMMAND
+
+GIT SETUP	1
+BASIC COMMAND	1
+GIT Setup	3
+Git Configuration	3
+Create Repository (NEW)	3
+Clone Existing Remote Repository	3
+Create Branch	3
+Staging and committing	4
+Committing changes	5
+Push to Server	5
+GUI Clients	5
+GIT GUI	5
+Playground Practice	6
+
+
+GIT Setup
+Git Configuration
+
+In Getting Started, you can specify Git configuration settings with the git config command. One of the first things you did was set up your name and email address:
+
+$ git config --global user.name "FirstName LastName"
+$ git config --global user.email firstName.lastName@metacube.com
+
+Verify git config settings:
+
+$ git config --list
+
+Create Repository (NEW)
+ Create an empty Git repository or reinitialize an existing one
+
+$ git init
+
+To bind local git with the remote directory
+
+$ git remote add origin [git remote url]
+
+Clone Existing Remote Repository
+
+Clone a repository into a new directory
+
+$ git clone [remote.url]
+Create Branch
+
+To create a new branch 
+
+$ git checkout -b [branch name] ( Branch name must be logical and self-explanatory) 
+
+To change the working branch to another branch
+
+$ git checkout [branch name]
+If a branch does not exist on the local machine but does exist on a remote repository we need to pull the latest changes from the remote repository.
+
+$ git pull
+$ git checkout [branch name]
+
+We can see all the branches created by using :
+$ git branch
+
+Staging and committing
+
+A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits.
+
+Suppose you have edited three files (a.html, b.html, and c.html). After that, you need to commit all the changes so that the changes to a.html and b.html were a single commit, while the changes to c.html were not logically associated with the first two files and were done in a separate commit.
+
+
+$ git add a.html
+$ git add b.html
+$ git commit -m "Changes for a and b"
+
+$ git add c.html
+$ git commit -m "Unrelated change to c"
+
+To check status if a file is staged or unstaged or commit by using:
+
+$ git status
+
+
+Committing changes
+
+When you previously used git commit for committing the first hello.html version to the repository, you included the -m flag that gives a comment on the command line. The commit command allows interactively editing comments for the commit. And now, let’s see how it works.
+
+$ git commit -m "Changes for a and b"
+$ git status
+
+Push to Server
+
+$ git push origin [branch name]
+
+GUI Clients
+Git comes with built-in GUI tools for committing (git-gui) and browsing (gitk), but there are several third-party tools for users looking for platform-specific experience.
+Source Tree
+Github Desktop
+TortoiseGit
+Etc
+
+GIT GUI
+An Illustrated Guide to Git on Windows. For more details, we can follow given below link about how to use GIT GUI.
+https://nathanj.github.io/gitguide/tour.html
+
+
+
+
+
+Playground Practice
+For more details we can follow at given below link:
+https://githowto.com/setup
+
